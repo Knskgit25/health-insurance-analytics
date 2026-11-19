@@ -1,0 +1,101 @@
+member_id,policy_id,relation,gender,date_of_birth,age_at_enrollment,age_band,city,state,region,city_tier,occupation_category,income_band,bmi,smoker_flag,pre_existing_conditions_count,has_diabetes,has_hypertension,has_cardiac_history,enrollment_date
+MEM_000001,POL_000001,Self,Female,1999-01-14,24,19-35,Varanasi,Uttar Pradesh,North,3,Self-Employed,3L-7L,19.8,0,0,0,0,0,2023-10-02
+MEM_000002,POL_000001,Spouse,Male,2002-02-21,21,19-35,Varanasi,Uttar Pradesh,North,3,Salaried,3L-7L,26.5,1,0,0,0,0,2023-10-02
+MEM_000003,POL_000002,Self,Male,1971-05-16,50,36-50,Varanasi,Uttar Pradesh,North,3,Salaried,7L-15L,22.1,0,0,0,0,0,2021-08-14
+MEM_000004,POL_000003,Self,Female,1968-09-28,54,51-65,Dehradun,Uttarakhand,North,3,Salaried,7L-15L,25.7,0,2,1,1,0,2023-05-27
+MEM_000005,POL_000004,Self,Male,1968-10-10,55,51-65,Surat,Gujarat,West,2,Salaried,7L-15L,22.2,0,3,1,1,1,2024-02-25
+MEM_000006,POL_000005,Self,Female,1989-02-10,32,19-35,Bengaluru,Karnataka,South,1,Salaried,7L-15L,30.6,0,0,0,0,0,2021-10-29
+MEM_000007,POL_000006,Self,Female,1991-01-29,30,19-35,Coimbatore,Tamil Nadu,South,2,Self-Employed,3L-7L,18.8,0,0,0,0,0,2021-11-16
+MEM_000008,POL_000007,Self,Female,1980-04-14,44,36-50,Rajkot,Gujarat,West,3,Salaried,3L-7L,26.5,0,0,0,0,0,2024-06-19
+MEM_000009,POL_000008,Self,Male,1995-06-15,28,19-35,Ranchi,Jharkhand,East,3,Salaried,7L-15L,26.4,0,0,0,0,0,2023-11-26
+MEM_000010,POL_000009,Self,Male,1990-07-25,33,19-35,Kolkata,West Bengal,East,1,Student,7L-15L,20.1,1,0,0,0,0,2023-08-20
+MEM_000011,POL_000010,Self,Male,1985-05-23,37,36-50,Indore,Madhya Pradesh,Central,2,Self-Employed,7L-15L,30.0,0,1,1,0,0,2023-01-28
+MEM_000012,POL_000011,Self,Male,1981-06-02,39,36-50,Bhubaneswar,Odisha,East,2,Professional,15L-25L,25.2,0,0,0,0,0,2021-05-01
+MEM_000013,POL_000012,Self,Female,1992-03-30,30,19-35,Siliguri,West Bengal,East,3,Retired,7L-15L,26.0,0,0,0,0,0,2022-07-24
+MEM_000014,POL_000013,Self,Female,1979-10-01,42,36-50,Patna,Bihar,East,2,Salaried,7L-15L,24.5,0,1,1,0,0,2022-07-18
+MEM_000015,POL_000014,Self,Male,1984-01-19,39,36-50,Gwalior,Madhya Pradesh,Central,3,Salaried,7L-15L,25.5,0,1,0,1,0,2023-10-03
+MEM_000016,POL_000015,Self,Male,1977-08-05,45,36-50,Gwalior,Madhya Pradesh,Central,3,Salaried,7L-15L,28.1,0,1,1,0,0,2023-01-10
+MEM_000017,POL_000016,Self,Male,1988-01-29,34,19-35,Agra,Uttar Pradesh,North,3,Retired,3L-7L,24.9,0,1,0,1,0,2022-07-11
+MEM_000018,POL_000017,Self,Female,1965-08-13,56,51-65,Kochi,Kerala,South,2,Homemaker,7L-15L,23.2,0,0,0,0,0,2022-02-24
+MEM_000019,POL_000018,Self,Male,1969-08-08,52,51-65,Agra,Uttar Pradesh,North,3,Self-Employed,,23.4,0,3,1,1,1,2022-07-02
+MEM_000020,POL_000019,Self,Male,2002-04-01,22,19-35,Ahmedabad,Gujarat,West,1,Salaried,15L-25L,24.3,1,0,0,0,0,2024-04-29
+MEM_000021,POL_000019,Spouse,Female,1999-03-24,25,19-35,Ahmedabad,Gujarat,West,1,Professional,3L-7L,16.5,0,0,0,0,0,2024-04-29
+MEM_000022,POL_000020,Self,Male,1975-11-03,47,36-50,Ahmedabad,Gujarat,West,1,Professional,3L-7L,22.7,0,1,1,0,0,2023-01-10
+MEM_000023,POL_000021,Self,Female,1972-11-15,49,36-50,Bengaluru,Karnataka,South,1,Salaried,7L-15L,24.8,0,0,0,0,0,2022-07-20
+MEM_000024,POL_000021,Spouse,Male,1971-12-13,50,36-50,Bengaluru,Karnataka,South,1,Homemaker,3L-7L,24.9,0,2,1,0,0,2022-07-20
+MEM_000025,POL_000022,Self,Female,1984-08-02,39,36-50,Patna,Bihar,East,2,Professional,7L-15L,23.6,0,0,0,0,0,2023-10-03
+MEM_000026,POL_000023,Self,Male,1999-09-08,22,19-35,Kochi,Kerala,South,2,Student,3L-7L,21.8,1,0,0,0,0,2021-12-12
+MEM_000027,POL_000023,Spouse,Female,2000-02-08,21,19-35,Kochi,Kerala,South,2,Salaried,<3L,19.7,0,0,0,0,0,2021-12-12
+MEM_000028,POL_000024,Self,Female,1980-01-09,44,36-50,Jabalpur,Madhya Pradesh,Central,3,Self-Employed,7L-15L,27.3,0,0,0,0,0,2024-11-28
+MEM_000029,POL_000025,Self,Female,1991-11-29,32,19-35,Visakhapatnam,Andhra Pradesh,South,2,Salaried,3L-7L,26.6,0,1,0,0,1,2024-05-21
+MEM_000030,POL_000026,Self,Male,1958-03-11,66,65+,Raipur,Chhattisgarh,Central,3,Salaried,15L-25L,23.7,1,2,0,0,1,2024-07-17
+MEM_000031,POL_000027,Self,Female,1967-06-06,55,51-65,Pune,Maharashtra,West,1,Salaried,3L-7L,16.8,0,0,0,0,0,2022-07-02
+MEM_000032,POL_000028,Self,Male,1986-04-19,38,36-50,Chandigarh,Punjab,North,2,Salaried,7L-15L,23.8,0,0,0,0,0,2024-08-23
+MEM_000033,POL_000029,Self,Female,1982-01-24,41,36-50,Gwalior,Madhya Pradesh,Central,3,Professional,15L-25L,32.2,0,0,0,0,0,2023-11-19
+MEM_000034,POL_000030,Self,Male,1991-06-19,33,19-35,Agra,Uttar Pradesh,North,3,Professional,<3L,22.5,0,0,0,0,0,2024-07-09
+MEM_000035,POL_000031,Self,Male,1970-01-01,54,51-65,Nashik,Maharashtra,West,3,Salaried,<3L,24.9,0,2,1,1,0,2024-06-22
+MEM_000036,POL_000031,Spouse,Female,1969-09-30,54,51-65,Nashik,Maharashtra,West,3,Professional,15L-25L,25.1,0,2,0,1,1,2024-06-22
+MEM_000037,POL_000032,Self,Female,1977-01-24,46,36-50,Bhubaneswar,Odisha,East,2,Salaried,25L+,18.1,0,0,0,0,0,2023-02-11
+MEM_000038,POL_000033,Self,Male,1986-04-15,35,19-35,Rajkot,Gujarat,West,3,Salaried,7L-15L,21.9,0,1,1,0,0,2022-04-06
+MEM_000039,POL_000034,Self,Female,1977-05-18,45,36-50,Siliguri,West Bengal,East,3,Retired,,28.3,0,1,0,1,0,2022-12-19
+MEM_000040,POL_000035,Self,Male,1972-08-22,49,36-50,Chennai,Tamil Nadu,South,1,Professional,3L-7L,22.3,1,0,0,0,0,2022-06-25
+MEM_000041,POL_000036,Self,Male,1992-04-28,31,19-35,Delhi,Delhi,North,1,Salaried,7L-15L,24.1,0,1,0,1,0,2023-09-06
+MEM_000042,POL_000037,Self,Female,1988-09-12,33,19-35,gwalior,Madhya Pradesh,Central,3,Retired,3L-7L,26.3,0,0,0,0,0,2022-03-01
+MEM_000043,POL_000038,Self,Male,1983-04-10,41,36-50,Guwahati,Assam,East,2,Self-Employed,<3L,27.7,1,1,0,1,0,2024-07-11
+MEM_000044,POL_000039,Self,Male,2000-04-24,24,19-35,Jaipur,Rajasthan,North,2,Salaried,3L-7L,29.5,0,0,0,0,0,2024-09-09
+MEM_000045,POL_000040,Self,Female,1996-12-15,27,19-35,Jabalpur,Madhya Pradesh,Central,3,Salaried,3L-7L,21.7,1,0,0,0,0,2024-07-12
+MEM_000046,POL_000041,Self,Male,2000-12-16,22,19-35,Agra,Uttar Pradesh,North,3,Self-Employed,3L-7L,22.9,1,0,0,0,0,2023-11-13
+MEM_000047,POL_000042,Self,Male,1976-03-22,46,36-50,Bhubaneswar,Odisha,East,2,Salaried,3L-7L,19.2,1,0,0,0,0,2022-11-15
+MEM_000048,POL_000042,Spouse,Female,1978-07-19,44,36-50,Bhubaneswar,Odisha,East,2,Salaried,25L+,26.6,0,0,0,0,0,2022-11-15
+MEM_000049,POL_000043,Self,Female,1984-12-21,39,36-50,Chennai,Tamil Nadu,South,1,Self-Employed,<3L,22.8,0,0,0,0,0,2024-11-15
+MEM_000050,POL_000043,Spouse,Male,1986-06-02,38,36-50,Chennai,Tamil Nadu,South,1,Professional,7L-15L,19.8,0,0,0,0,0,2024-11-15
+MEM_000051,POL_000044,Self,Male,1987-12-27,36,36-50,Gwalior,Madhya Pradesh,Central,3,Homemaker,15L-25L,31.7,0,0,0,0,0,2024-04-10
+MEM_000052,POL_000045,Self,Male,1980-02-27,43,36-50,Ahmedabad,Gujarat,West,1,Self-Employed,3L-7L,20.0,1,0,0,0,0,2024-01-04
+MEM_000053,POL_000045,Spouse,Female,1981-04-03,42,36-50,Ahmedabad,Gujarat,West,1,Homemaker,3L-7L,26.2,0,2,1,1,0,2024-01-04
+MEM_000054,POL_000046,Self,Female,1992-01-15,32,19-35,Varanasi,Uttar Pradesh,North,3,Salaried,3L-7L,26.5,0,0,0,0,0,2024-06-20
+MEM_000055,POL_000047,Self,Male,1990-08-19,33,19-35,Delhi,Delhi,North,1,Professional,7L-15L,19.5,0,0,0,0,0,2024-05-09
+MEM_000056,POL_000048,Self,Male,1977-07-05,45,36-50,Mumbai,Maharashtra,West,1,Salaried,<3L,28.6,0,0,0,0,0,2023-03-05
+MEM_000057,POL_000049,Self,Male,1991-12-06,29,19-35,Pune,Maharashtra,West,1,Professional,<3L,25.3,0,0,0,0,0,2021-03-07
+MEM_000058,POL_000050,Self,Male,1998-01-04,26,19-35,Nashik,Maharashtra,West,3,Homemaker,,22.7,0,0,0,0,0,2024-10-10
+MEM_000059,POL_000051,Self,Male,1982-03-19,40,36-50,Patna,Bihar,East,2,Self-Employed,7L-15L,27.4,0,0,0,0,0,2022-11-15
+MEM_000060,POL_000052,Self,Male,1991-06-02,32,19-35,Mangalore,Karnataka,South,3,Salaried,3L-7L,27.3,0,0,0,0,0,2023-08-10
+MEM_000061,POL_000053,Self,Female,1983-11-10,40,36-50,Surat,Gujarat,West,2,Retired,7L-15L,22.6,0,0,0,0,0,2024-08-16
+MEM_000062,POL_000054,Self,Male,1991-04-22,31,19-35,Hyderabad,Telangana,South,1,Salaried,3L-7L,19.6,0,0,0,0,0,2023-04-12
+MEM_000063,POL_000054,Spouse,Female,1990-12-16,32,19-35,Hyderabad,Telangana,South,1,Salaried,15L-25L,28.5,0,0,0,0,0,2023-04-12
+MEM_000064,POL_000054,Child,Male,2014-10-24,8,0-18,Hyderabad,Telangana,South,1,Student,<3L,24.1,0,0,0,0,0,2023-04-12
+MEM_000065,POL_000055,Self,Male,1967-08-31,54,51-65,Bhubaneswar,Odisha,East,2,Salaried,7L-15L,28.5,0,1,0,1,0,2021-10-18
+MEM_000066,POL_000056,Self,Male,1980-08-01,44,36-50,Nashik,Maharashtra,West,3,Salaried,3L-7L,20.3,0,1,0,1,0,2024-11-29
+MEM_000067,POL_000056,Spouse,Female,1984-03-23,40,36-50,Nashik,Maharashtra,West,3,Salaried,3L-7L,19.1,1,1,0,1,0,2024-11-29
+MEM_000068,POL_000057,Self,Male,1973-10-04,48,36-50,Patna,Bihar,East,2,Self-Employed,3L-7L,21.2,0,2,1,1,0,2022-10-02
+MEM_000069,POL_000058,Self,Male,1979-06-02,42,36-50,Madurai,Tamil Nadu,South,3,Salaried,7L-15L,22.4,0,1,0,1,0,2022-04-14
+MEM_000070,POL_000059,Self,Male,1974-06-27,49,36-50,Chennai,Tamil Nadu,South,1,Salaried,15L-25L,27.8,0,1,1,0,0,2023-11-23
+MEM_000071,POL_000060,Self,Male,1999-09-22,22,19-35,Agra,Uttar Pradesh,North,3,Retired,<3L,21.5,1,0,0,0,0,2021-11-11
+MEM_000072,POL_000061,Self,Male,1994-09-12,26,19-35,Gwalior,Madhya Pradesh,Central,3,Retired,3L-7L,26.7,0,0,0,0,0,2021-09-09
+MEM_000073,POL_000062,Self,Female,1985-01-27,37,36-50,Madurai,Tamil Nadu,South,3,Self-Employed,3L-7L,24.0,0,0,0,0,0,2022-12-04
+MEM_000074,POL_000063,Self,Male,1985-07-04,39,36-50,Nashik,Maharashtra,West,3,Salaried,<3L,24.0,0,0,0,0,0,2024-11-16
+MEM_000075,POL_000064,Self,Male,1977-01-21,44,36-50,Coimbatore,Tamil Nadu,South,2,Self-Employed,3L-7L,25.4,1,0,0,0,0,2021-12-15
+MEM_000076,POL_000064,Spouse,Female,1974-05-07,47,36-50,Coimbatore,Tamil Nadu,South,2,Salaried,<3L,23.4,0,0,0,0,0,2021-12-15
+MEM_000077,POL_000064,Child,Male,2011-01-16,10,0-18,Coimbatore,Tamil Nadu,South,2,Student,<3L,16.5,0,0,0,0,0,2021-12-15
+MEM_000078,POL_000065,Self,Female,1955-06-10,68,65+,Rajkot,Gujarat,West,3,Salaried,<3L,25.5,0,2,1,0,0,2024-05-06
+MEM_000079,POL_000066,Self,Female,1995-02-09,29,19-35,Ahmedabad,Gujarat,West,1,Salaried,15L-25L,20.4,0,0,0,0,0,2024-02-22
+MEM_000080,POL_000067,Self,Male,1986-04-27,35,19-35,Madurai,Tamil Nadu,South,3,Salaried,25L+,28.8,0,0,0,0,0,2022-03-29
+MEM_000081,POL_000067,Spouse,Female,1989-10-20,32,19-35,Madurai,Tamil Nadu,South,3,Homemaker,3L-7L,21.3,0,0,0,0,0,2022-03-29
+MEM_000082,POL_000067,Child,Male,2012-03-28,10,0-18,Madurai,Tamil Nadu,South,3,Student,<3L,25.5,0,0,0,0,0,2022-03-29
+MEM_000083,POL_000068,Self,Male,1993-12-06,30,19-35,Madurai,Tamil Nadu,South,3,Professional,3L-7L,22.4,0,0,0,0,0,2024-01-02
+MEM_000084,POL_000069,Self,Female,1991-03-25,32,19-35,Siliguri,West Bengal,East,3,Professional,<3L,27.5,1,0,0,0,0,2024-02-04
+MEM_000085,POL_000070,Self,Male,1993-07-21,30,19-35,Ahmedabad,Gujarat,West,1,Professional,15L-25L,22.6,1,0,0,0,0,2023-09-25
+MEM_000086,POL_000071,Self,Female,1984-04-30,38,36-50,Siliguri,West Bengal,East,3,Self-Employed,3L-7L,26.3,0,0,0,0,0,2023-01-21
+MEM_000087,POL_000072,Self,Male,1970-08-21,52,51-65,Mumbai,Maharashtra,West,1,Self-Employed,7L-15L,17.8,0,0,0,0,0,2022-08-26
+MEM_000088,POL_000073,Self,Female,1975-08-05,47,36-50,Mangalore,Karnataka,South,3,Self-Employed,15L-25L,21.6,0,0,0,0,0,2022-10-08
+MEM_000089,POL_000074,Self,Male,1980-03-01,42,36-50,Rajkot,Gujarat,West,3,Retired,3L-7L,23.7,0,0,0,0,0,2022-03-27
+MEM_000090,POL_000075,Self,Male,1984-02-12,37,36-50,Bhubaneswar,Odisha,East,2,Salaried,7L-15L,16.5,0,2,1,1,0,2021-04-02
+MEM_000091,POL_000076,Self,Male,1984-06-06,40,36-50,Surat,Gujarat,West,2,Self-Employed,3L-7L,24.9,0,0,0,0,0,2024-11-22
+MEM_000092,POL_000077,Self,Male,1999-09-28,22,19-35,Bhubaneswar,Odisha,East,2,Salaried,7L-15L,19.3,0,0,0,0,0,2022-01-12
+MEM_000093,POL_000078,Self,Female,1992-02-24,30,19-35,Lucknow,Uttar Pradesh,North,2,Salaried,3L-7L,26.4,0,0,0,0,0,2022-09-13
+MEM_000094,POL_000079,Self,Female,1998-03-24,24,19-35,Hyderabad,Telangana,South,1,Homemaker,3L-7L,32.7,0,0,0,0,0,2023-01-26
+MEM_000095,POL_000080,Self,Male,1992-03-22,31,19-35,Agra,Uttar Pradesh,North,3,Retired,7L-15L,23.8,0,0,0,0,0,2023-11-29
+MEM_000096,POL_000081,Self,Female,1996-05-10,26,19-35,Hyderabad,Telangana,South,1,Professional,<3L,18.1,0,0,0,0,0,2023-01-24
+MEM_000097,POL_000081,Spouse,Male,1993-02-15,29,19-35,Hyderabad,Telangana,South,1,Professional,3L-7L,28.7,0,0,0,0,0,2023-01-24
+MEM_000098,POL_000082,Self,Female,1976-04-26,46,36-50,Varanasi,Uttar Pradesh,North,3,Salaried,3L-7L,19.8,0,0,0,0,0,2022-06-23
+MEM_000099,POL_000083,Self,Male,1986-09-16,36,36-50,Nashik,Maharashtra,West,3,Salaried,,16.5,0,1,0,1,0,2023-05-03
+MEM_000100,POL_000084,Self,Female,1990-03-01,33,19-35,Bhopal,Madhya Pradesh,Central,2,Student,7L-15L,22.5,0,0,0,0,0,2023-03-20

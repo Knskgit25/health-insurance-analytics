@@ -1,0 +1,40 @@
+project:
+  name: "medisure-health-insurance-analytics"
+  seed: 42
+  currency: "INR"
+  date_range:
+    start: "2021-01-01"
+    end: "2025-12-31"
+
+scale:
+  num_members: 50000
+  num_policies: 42000
+  num_providers: 800
+  target_claims: 120000
+
+paths:
+  raw_dir: "data/raw"
+  processed_dir: "data/processed"
+  warehouse_dir: "data/warehouse"
+  duckdb_file: "data/warehouse/medisure.duckdb"
+  models_dir: "models"
+  metrics_file: "models/metrics.json"
+  figures_dir: "reports/figures"
+  sql_dir: "sql"
+
+loss_ratio_target:
+  min: 0.70
+  max: 0.95
+
+rejection_rate_target:
+  min: 0.08
+  max: 0.12
+
+fraud_share_target:
+  min: 0.02
+  max: 0.03
+
+renewal_rate_target:
+  min: 0.78
+  max: 0.88
+

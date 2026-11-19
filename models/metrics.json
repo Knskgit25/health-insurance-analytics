@@ -1,0 +1,376 @@
+{
+  "timestamp": "2026-11-20 00:49:03",
+  "models": {
+    "model_a_claim_cost": {
+      "model_name": "Claim Cost Prediction (XGBoost Regressor)",
+      "train_rows": 65109,
+      "test_rows": 33703,
+      "split": "Time-based (Train < 2025, Test >= 2025)",
+      "baseline_global_mean": {
+        "mae": 24392.29,
+        "rmse": 43018.13
+      },
+      "baseline_diagnosis_mean": {
+        "mae": 22185.23,
+        "rmse": 34899.32
+      },
+      "ridge_regression": {
+        "mae": 12543.83,
+        "rmse": 23965.5,
+        "r2": 0.647
+      },
+      "xgboost_regressor": {
+        "mae": 10462.97,
+        "rmse": 21255.94,
+        "r2": 0.7223,
+        "smape_pct": 31.6
+      },
+      "beat_baseline": true,
+      "decile_calibration": {
+        "1": {
+          "actual_mean": 5105.372767724712,
+          "predicted_mean": 4078.49462890625
+        },
+        "2": {
+          "actual_mean": 8876.755089020771,
+          "predicted_mean": 7952.791015625
+        },
+        "3": {
+          "actual_mean": 12330.407267062315,
+          "predicted_mean": 11092.1435546875
+        },
+        "4": {
+          "actual_mean": 15553.52487537092,
+          "predicted_mean": 14594.2021484375
+        },
+        "5": {
+          "actual_mean": 20339.50447938297,
+          "predicted_mean": 18875.85546875
+        },
+        "6": {
+          "actual_mean": 25336.097715133532,
+          "predicted_mean": 23712.9296875
+        },
+        "7": {
+          "actual_mean": 33341.04164094955,
+          "predicted_mean": 30530.083984375
+        },
+        "8": {
+          "actual_mean": 43083.00341543026,
+          "predicted_mean": 40650.59765625
+        },
+        "9": {
+          "actual_mean": 71321.58569139466,
+          "predicted_mean": 64956.07421875
+        },
+        "10": {
+          "actual_mean": 119388.7226965292,
+          "predicted_mean": 111113.328125
+        }
+      }
+    },
+    "model_b_fraud_detection": {
+      "model_name": "Fraud & Anomaly Detection (XGBoost Classifier)",
+      "train_rows": 79530,
+      "test_rows": 40470,
+      "target_class": "is_fraud_flag",
+      "prevalence_pct": 2.22,
+      "primary_metric": "PR-AUC",
+      "unsupervised_anomaly_baseline": {
+        "pr_auc": 0.4779,
+        "roc_auc": 0.8798
+      },
+      "xgboost_classifier": {
+        "pr_auc": 0.7994,
+        "roc_auc": 0.9113
+      },
+      "beat_baseline": true,
+      "optimal_threshold_analysis": {
+        "threshold": 0.66,
+        "precision": 0.6348,
+        "recall": 0.7814,
+        "f1": 0.7005,
+        "confusion_matrix": {
+          "tn": 39177,
+          "fp": 401,
+          "fn": 195,
+          "tp": 697
+        },
+        "total_investigations": 1098,
+        "fraud_amount_recovered_inr": 76784133.57,
+        "net_financial_savings_inr": 74588133.57
+      },
+      "sample_cost_curve": [
+        {
+          "threshold": 0.05,
+          "precision": 0.0303,
+          "recall": 0.9428,
+          "f1": 0.0587,
+          "investigations": 27766,
+          "net_savings_inr": 28268584.16
+        },
+        {
+          "threshold": 0.1,
+          "precision": 0.0422,
+          "recall": 0.9114,
+          "f1": 0.0807,
+          "investigations": 19266,
+          "net_savings_inr": 43854764.23
+        },
+        {
+          "threshold": 0.15,
+          "precision": 0.0613,
+          "recall": 0.8857,
+          "f1": 0.1147,
+          "investigations": 12885,
+          "net_savings_inr": 55308252.25
+        },
+        {
+          "threshold": 0.2,
+          "precision": 0.0889,
+          "recall": 0.8531,
+          "f1": 0.1611,
+          "investigations": 8557,
+          "net_savings_inr": 62814783.2
+        },
+        {
+          "threshold": 0.25,
+          "precision": 0.1294,
+          "recall": 0.8374,
+          "f1": 0.2242,
+          "investigations": 5771,
+          "net_savings_inr": 67852076.68
+        },
+        {
+          "threshold": 0.3,
+          "precision": 0.1841,
+          "recall": 0.824,
+          "f1": 0.301,
+          "investigations": 3992,
+          "net_savings_inr": 70974356.17
+        },
+        {
+          "threshold": 0.35,
+          "precision": 0.2574,
+          "recall": 0.8105,
+          "f1": 0.3907,
+          "investigations": 2809,
+          "net_savings_inr": 72540565.87
+        },
+        {
+          "threshold": 0.4,
+          "precision": 0.3277,
+          "recall": 0.8072,
+          "f1": 0.4662,
+          "investigations": 2197,
+          "net_savings_inr": 73652785.04
+        },
+        {
+          "threshold": 0.45,
+          "precision": 0.3877,
+          "recall": 0.8049,
+          "f1": 0.5233,
+          "investigations": 1852,
+          "net_savings_inr": 74256360.53
+        },
+        {
+          "threshold": 0.5,
+          "precision": 0.4455,
+          "recall": 0.8016,
+          "f1": 0.5727,
+          "investigations": 1605,
+          "net_savings_inr": 74578614.54
+        },
+        {
+          "threshold": 0.55,
+          "precision": 0.4965,
+          "recall": 0.7937,
+          "f1": 0.6109,
+          "investigations": 1426,
+          "net_savings_inr": 74438254.81
+        },
+        {
+          "threshold": 0.6,
+          "precision": 0.551,
+          "recall": 0.787,
+          "f1": 0.6482,
+          "investigations": 1274,
+          "net_savings_inr": 74368878.19
+        },
+        {
+          "threshold": 0.65,
+          "precision": 0.6163,
+          "recall": 0.7814,
+          "f1": 0.6891,
+          "investigations": 1131,
+          "net_savings_inr": 74522133.57
+        },
+        {
+          "threshold": 0.7,
+          "precision": 0.6903,
+          "recall": 0.7747,
+          "f1": 0.7301,
+          "investigations": 1001,
+          "net_savings_inr": 74191691.42
+        },
+        {
+          "threshold": 0.75,
+          "precision": 0.7861,
+          "recall": 0.7623,
+          "f1": 0.774,
+          "investigations": 865,
+          "net_savings_inr": 73874893.81
+        },
+        {
+          "threshold": 0.8,
+          "precision": 0.8832,
+          "recall": 0.7545,
+          "f1": 0.8138,
+          "investigations": 762,
+          "net_savings_inr": 73626571.57
+        },
+        {
+          "threshold": 0.85,
+          "precision": 0.9444,
+          "recall": 0.7433,
+          "f1": 0.8319,
+          "investigations": 702,
+          "net_savings_inr": 73129117.61
+        },
+        {
+          "threshold": 0.9,
+          "precision": 0.9775,
+          "recall": 0.7321,
+          "f1": 0.8372,
+          "investigations": 668,
+          "net_savings_inr": 72002151.24
+        },
+        {
+          "threshold": 0.95,
+          "precision": 0.9952,
+          "recall": 0.7018,
+          "f1": 0.8231,
+          "investigations": 629,
+          "net_savings_inr": 68535848.68
+        }
+      ],
+      "headline_metric_disclaimer": "Raw accuracy is omitted because a naive zero-classifier yields 97.8% accuracy while detecting 0 fraud. PR-AUC and Net Financial Savings are the domain-appropriate evaluation standards."
+    },
+    "model_c_policy_lapse": {
+      "model_name": "Policy Lapse Prediction (XGBoost Classifier)",
+      "train_rows": 57078,
+      "test_rows": 31552,
+      "target_class": "target_lapse (1 = Lapsed, 0 = Renewed)",
+      "lapse_prevalence_pct": 18.3,
+      "logistic_regression_baseline": {
+        "roc_auc": 0.7421,
+        "pr_auc": 0.5576
+      },
+      "xgboost_classifier": {
+        "roc_auc": 0.7427,
+        "pr_auc": 0.5587
+      },
+      "beat_baseline": true,
+      "retention_targeting_simulation": {
+        "top_percentile_targeted": 20.0,
+        "total_lapses_in_test": 5740,
+        "lapses_captured_in_top_20": 2648,
+        "capture_rate_pct": 46.13,
+        "lift_multiplier": 2.31
+      },
+      "decile_gain_curve": [
+        {
+          "decile": 1,
+          "policies": 3156,
+          "lapses": 2153,
+          "mean_pred_prob": 0.8079527456913006,
+          "lapse_rate": 68.2192648922687,
+          "cum_lapses": 2153,
+          "cum_gain_pct": 37.50871080139373
+        },
+        {
+          "decile": 2,
+          "policies": 3155,
+          "lapses": 495,
+          "mean_pred_prob": 0.3754079190184688,
+          "lapse_rate": 15.689381933438987,
+          "cum_lapses": 2648,
+          "cum_gain_pct": 46.13240418118467
+        },
+        {
+          "decile": 3,
+          "policies": 3155,
+          "lapses": 488,
+          "mean_pred_prob": 0.3496384724762096,
+          "lapse_rate": 15.467511885895405,
+          "cum_lapses": 3136,
+          "cum_gain_pct": 54.63414634146342
+        },
+        {
+          "decile": 4,
+          "policies": 3155,
+          "lapses": 625,
+          "mean_pred_prob": 0.25167193484806977,
+          "lapse_rate": 19.809825673534075,
+          "cum_lapses": 3761,
+          "cum_gain_pct": 65.5226480836237
+        },
+        {
+          "decile": 5,
+          "policies": 3155,
+          "lapses": 457,
+          "mean_pred_prob": 0.09031833912321202,
+          "lapse_rate": 14.484944532488115,
+          "cum_lapses": 4218,
+          "cum_gain_pct": 73.48432055749129
+        },
+        {
+          "decile": 6,
+          "policies": 3155,
+          "lapses": 399,
+          "mean_pred_prob": 0.07497663923233701,
+          "lapse_rate": 12.646592709984153,
+          "cum_lapses": 4617,
+          "cum_gain_pct": 80.43554006968641
+        },
+        {
+          "decile": 7,
+          "policies": 3155,
+          "lapses": 493,
+          "mean_pred_prob": 0.015010345073803527,
+          "lapse_rate": 15.625990491283675,
+          "cum_lapses": 5110,
+          "cum_gain_pct": 89.02439024390245
+        },
+        {
+          "decile": 8,
+          "policies": 3155,
+          "lapses": 425,
+          "mean_pred_prob": 0.00026031325123104576,
+          "lapse_rate": 13.47068145800317,
+          "cum_lapses": 5535,
+          "cum_gain_pct": 96.42857142857143
+        },
+        {
+          "decile": 9,
+          "policies": 3155,
+          "lapses": 204,
+          "mean_pred_prob": 0.00017421010861091356,
+          "lapse_rate": 6.4659270998415215,
+          "cum_lapses": 5739,
+          "cum_gain_pct": 99.98257839721254
+        },
+        {
+          "decile": 10,
+          "policies": 3156,
+          "lapses": 1,
+          "mean_pred_prob": 9.823346885430382e-05,
+          "lapse_rate": 0.03168567807351077,
+          "cum_lapses": 5740,
+          "cum_gain_pct": 100.0
+        }
+      ]
+    }
+  },
+  "all_beat_baseline": true
+}
