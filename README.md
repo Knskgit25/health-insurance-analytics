@@ -25,45 +25,61 @@
 
 ```mermaid
 flowchart TD
-    subgraph DataGeneration ["1. Synthetic Data Generation Engine (Deterministic Seed 42)"]
-        G1[dim_provider<br/>800 Hospitals]
-        G2[dim_diagnosis<br/>29 ICD-10 Codes]
-        G3[dim_policy & fact_renewals<br/>42,000 Contracts]
-        G4[dim_member<br/>50,000 Policyholders]
-        G5[fact_claims & fact_premiums<br/>120,000 Claims]
-        Noise[Raw Data Noise Injection<br/>Null BMI/Income, Inconsistent Casing, Duplicates]
+    subgraph S1 ["1. Synthetic Data Generation Engine (Deterministic Seed 42)"]
+        G1["dim_provider<br/>800 Hospitals"]
+        G2["dim_diagnosis<br/>29 ICD-10 Codes"]
+        G3["dim_policy and fact_renewals<br/>42,000 Contracts"]
+        G4["dim_member<br/>50,000 Policyholders"]
+        G5["fact_claims and fact_premiums<br/>120,000 Claims"]
+        Noise["Raw Data Noise Injection<br/>Null BMI/Income, Inconsistent Casing, Duplicates"]
+        G1 --> Noise
+        G2 --> Noise
+        G3 --> Noise
+        G4 --> Noise
+        G5 --> Noise
     end
 
-    subgraph Warehouse ["2. DuckDB Columnar Warehouse (Cleaned Star Schema)"]
-        Clean[Warehouse Cleaning Pipeline<br/>Deduplication, Standardized Imputation, Integrity Enforcement]
-        Log[cleaning_log.json]
-        DB[(medisure.duckdb)]
+    subgraph S2 ["2. DuckDB Columnar Warehouse (Cleaned Star Schema)"]
+        Clean["Warehouse Cleaning Pipeline<br/>Deduplication, Standardized Imputation, Integrity Enforcement"]
+        Log["cleaning_log.json"]
+        DB[("medisure.duckdb")]
+        Clean --> Log
+        Clean --> DB
     end
 
-    subgraph Analytics ["3. SQL Analytics & Actuarial KPIs"]
-        KPIs[sql/kpis/<br/>Earned Premium, Incurred Claims, Loss Ratio, CSR, TAT, Persistency]
-        BQs[sql/analysis/<br/>16 Business Question Queries: Window LAG, CTEs, Percentiles, Cohorts]
-        EDA[Statistical Hypothesis Testing<br/>Mann-Whitney U, Chi-Square, Kruskal-Wallis, Cramér's V]
+    subgraph S3 ["3. SQL Analytics and Actuarial KPIs"]
+        KPIs["sql/kpis/<br/>Earned Premium, Incurred Claims, Loss Ratio, CSR, TAT, Persistency"]
+        BQs["sql/analysis/<br/>16 Business Question Queries: Window LAG, CTEs, Percentiles, Cohorts"]
+        EDA["Statistical Hypothesis Testing<br/>Mann-Whitney U, Chi-Square, Kruskal-Wallis, Cramer's V"]
     end
 
-    subgraph ML ["4. Predictive Machine Learning (Time-Based Split 2021-2024 -> 2025)"]
-        MA[Model A: Claim Cost Prediction<br/>XGBoost Regressor | MAE: ₹10,463 vs ₹22,185 Baseline]
-        MB[Model B: Fraud Detection<br/>XGBoost Classifier | PR-AUC: 0.7994 vs 0.4779 Baseline]
-        MC[Model C: Policy Lapse Prediction<br/>XGBoost Classifier | ROC-AUC: 0.7427 | 2.31x Top 20% Lift]
+    subgraph S4 ["4. Predictive Machine Learning (Time-Based Split 2021-2024 to 2025)"]
+        MA["Model A: Claim Cost Prediction<br/>XGBoost Regressor - MAE: Rs 10,463 vs Rs 22,185 Baseline"]
+        MB["Model B: Fraud Detection<br/>XGBoost Classifier - PR-AUC: 0.7994 vs 0.4779 Baseline"]
+        MC["Model C: Policy Lapse Prediction<br/>XGBoost Classifier - ROC-AUC: 0.7427 - 2.31x Top 20% Lift"]
     end
 
-    subgraph UI ["5. Interactive Multi-Page Streamlit Dashboard"]
-        P1[1. Executive Overview]
-        P2[2. Claims Analysis]
-        P3[3. Risk & Fraud]
-        P4[4. Retention Intelligence]
-        P5[5. Member 360 Explorer]
+    subgraph S5 ["5. Interactive Multi-Page Streamlit Dashboard"]
+        P1["1. Executive Overview"]
+        P2["2. Claims Analysis"]
+        P3["3. Risk and Fraud"]
+        P4["4. Retention Intelligence"]
+        P5["5. Member 360 Explorer"]
     end
 
-    DataGeneration --> Noise --> Clean --> Log & DB
-    DB --> KPIs & BQs & EDA
-    DB --> ML
-    DB & ML --> UI
+    Noise --> Clean
+    DB --> KPIs
+    DB --> BQs
+    DB --> EDA
+    DB --> MA
+    DB --> MB
+    DB --> MC
+    KPIs --> P1
+    BQs --> P2
+    MB --> P3
+    MC --> P4
+    MA --> P5
+    DB --> P5
 ```
 
 ---
@@ -74,8 +90,8 @@ The entire platform is deterministic and reproducible locally:
 
 ```bash
 # 1. Clone repository
-git clone https://github.com/example/medisure-health-insurance-analytics.git
-cd medisure-health-insurance-analytics
+git clone https://github.com/Knskgit25/health-insurance-analytics.git
+cd health-insurance-analytics
 
 # 2. Install dependencies
 pip install -r requirements.txt
